@@ -1,110 +1,71 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamza Edits - مونتاج احترافي</title>
+  <title>Hamza Edits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-      direction: rtl;
-    }
-    header {
-      background-color: #222;
-      padding: 30px;
+      font-family: 'Cairo', sans-serif;
+      background: #0f0f0f;
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      color: #00ffe1;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeInDown 1s ease-out;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      animation: fadeInUp 1.5s ease-out;
     }
-    h2 {
-      border-bottom: 1px solid #444;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-      color: #00ffe1;
-    }
-    .video-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    iframe {
-      width: 100%;
-      height: 250px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li::before {
-      content: "\2022 ";
-      color: #00ffe1;
-      margin-left: 5px;
-    }
-    .contact a {
-      color: #00ffe1;
+    a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: white;
+      color: black;
       text-decoration: none;
-      display: block;
-      margin-top: 10px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: 0.3s;
+      animation: fadeInUp 2s ease-out;
     }
-    footer {
-      background-color: #111;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #666;
+    a:hover {
+      background-color: #ddd;
+    }
+    @keyframes fadeInDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Hamza Edits</h1>
-    <p>مونتاج احترافي لفيديوهات السوشيال ميديا والإعلانات</p>
-  </header>
+  <h1>Hamza Edits</h1>
+  <p>I create high-quality video edits and professional content for social media and brands.</p>
+  <a href="#contact">Contact Me</a>
 
-  <section>
-    <h2>من أنا</h2>
-    <p>أنا حمزة، مونتير محترف أساعدك في تحويل أفكارك إلى فيديوهات جذابة تناسب Reels وTikTok وShorts. أركز على الإبداع، السرعة، والتفاصيل اللي تميزك عن غيرك.</p>
-  </section>
-
-  <section>
-    <h2>أعمالي</h2>
-    <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/VID1" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/VID2" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <section>
-    <h2>الخدمات</h2>
-    <ul>
-      <li>مونتاج Reels / Shorts بجودة عالية</li>
-      <li>تصحيح ألوان وتحسين الصوت</li>
-      <li>إضافة مؤثرات بصرية وموشن</li>
-      <li>تصميم Intros وOutros احترافية</li>
-    </ul>
-  </section>
-
-  <section class="contact">
-    <h2>تواصل معي</h2>
-    <a href="https://wa.me/213XXXXXXXXX">📱 واتساب</a>
-    <a href="https://instagram.com/username">📸 إنستغرام</a>
-    <a href="mailto:your@email.com">✉️ البريد الإلكتروني</a>
-  </section>
-
-  <footer>
-    &copy; 2025 Hamza Edits - جميع الحقوق محفوظة
-  </footer>
+  <div id="contact" style="margin-top: 3rem;">
+    <p style="font-size: 1rem; color: #aaa;">Phone: +213 XX XX XX XX</p>
+    <p style="font-size: 1rem; color: #aaa;">Email: your@email.com</p>
+  </div>
 </body>
 </html>
+
